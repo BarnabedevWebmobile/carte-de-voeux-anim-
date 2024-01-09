@@ -55,6 +55,7 @@ section::before{
     background-size: cover;
     background-position: center;
     opacity: 0;
+    transition: all .9s;
 }
 .step2{
     background-image: url(../images/dormeur.jpg);
@@ -74,6 +75,8 @@ section::before{
     background-size: cover;
     background-position: center;
 }
+
+
 .step5{
     background-image: url(../images/montmartre.jpg);
     background-repeat: no-repeat;
@@ -84,30 +87,46 @@ section::before{
     font-family: 'Dancing Script', cursive;
 }
 .auteur{
+    position: relative;
     width: 300px;
     display: flex;
     justify-content: end;
     font-size: 22px;
+    right: 290px;
+    opacity: 0;
+    transition: all .8s;
+}
+#autor1{
+    right: -1000px;
 }
 h2{
     font-size: 26px;
     margin-bottom: 40px;
+    opacity: 0;
+    transition: all .9s;
+}
+#title1{
+    position: relative;
+    top: -900px;
+    transition: all .200000s;
 }
 p{
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
 }
-.step1 .poeme{
-    opacity: 1;
-}
 .poeme{
+    position: relative;
+    bottom: -90px;
+    transition: all .20s;
     max-height: 90vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     opacity: 1;
     font-family: 'Kalam', cursive;
+    opacity: 0;
+    transition: all .5s;
 }
 .poeme p{
     padding-right: 30px;

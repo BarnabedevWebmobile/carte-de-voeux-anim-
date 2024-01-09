@@ -8,6 +8,22 @@ section{
     width: 100vw;
     height: 100vh;
 }
+.step1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+.stepinner{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
 .next{
     position: fixed;
     border-radius: 100%;
@@ -24,26 +40,73 @@ section{
     height: 100%;
 }
 .step1{
-    background-color: blue;
+    background-image: url(../images/pont.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .step2{
-    background-color: brown;
+    background-image: url(../images/dormeur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .step3{
-    background-color: blueviolet;
+    background-image: url(../images/colchique.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .step4{
-    background-color: chocolate;
+    background-image: url(../images/bakamitai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .step5{
-    background-color: cornflowerblue;
+    background-image: url(../images/montmartre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.titre-auteur{
+    font-family: 'Dancing Script', cursive;
+}
+.auteur{
+    width: 300px;
+    display: flex;
+    justify-content: end;
+    font-size: 22px;
 }
 h2{
+    font-size: 26px;
     margin-bottom: 40px;
 }
 p{
     margin-bottom: 20px;
 }
+.step1 .poeme{
+    opacity: 1;
+}
 .poeme{
     max-width: 600px;
+    font-family: 'Kalam', cursive;
+}
+.step4 .poeme{
+    max-height: 80vh;
+    max-width: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.step5 .poeme{
+    max-height: 90vh;
+    max-width: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    opacity: 1;
+}
+.step5 .poeme p{
+    padding-right: 30px;
 }

@@ -55,7 +55,7 @@ section::before{
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: all .9s;
+    transition: all .800s;
 }
 .step2{
     background-image: url(../images/dormeur.jpg);
@@ -117,7 +117,7 @@ p{
 }
 .poeme{
     position: relative;
-    bottom: -90px;
+    bottom: -9000px;
     transition: all .20s;
     max-height: 90vh;
     display: flex;

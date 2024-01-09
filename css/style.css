@@ -5,10 +5,10 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
-.step1::before{
+section::before{
     content: "";
     width: 100%;
     height: 100%;
@@ -17,20 +17,24 @@ section{
     right: 0;
     opacity: 0.5;
 }
+
 .stepinner{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    height: 100%;
     width: 100%;
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
 }
 .next{
     position: fixed;
     border-radius: 100%;
     right: 20px;
     top: 50%;
-    width: 50px;
-    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,29 +88,50 @@ h2{
 }
 p{
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .step1 .poeme{
     opacity: 1;
 }
 .poeme{
-    max-width: 600px;
-    font-family: 'Kalam', cursive;
-}
-.step4 .poeme{
-    max-height: 80vh;
-    max-width: 70vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.step5 .poeme{
     max-height: 90vh;
-    max-width: 80vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     opacity: 1;
+    font-family: 'Kalam', cursive;
 }
-.step5 .poeme p{
+.poeme p{
     padding-right: 30px;
+}
+@media (max-width: 882px){
+    .step4{
+        height: 800px;
+        width: 100%;
+        background-size: cover;
+    }
+    .poeme{
+        max-height: 100%;
+    }
+    .step5{
+        height: 1500px;
+        width: 100%;
+        background-size: cover;
+    }
+}
+@media (max-width: 582px){
+    .step4{
+        height: 1000px;
+        width: 100%;
+        background-size: cover;
+    }
+    .poeme{
+        max-height: 100%;
+    }
+    .step5{
+        height: 1500px;
+        width: 100%;
+        background-size: cover;
+    }
 }

@@ -87,6 +87,9 @@ function showstep3(){
         
         autor3.style.opacity = 1;
     },"12000");
+    setTimeout(()=>{
+        showstep4()
+    }, "15000")
 }
 
 function showstep4(){
@@ -98,6 +101,25 @@ function showstep4(){
     step3.style.display = "none";
     step4.style.display = "block";
 
+    step4.style.opacity = 0;
+
+    title4.style.opacity = 0;
+    
+    poeme4.style.opacity = 0;
+    
+    autor4.style.opacity = 0;
+
+    setTimeout(()=>{
+        step4.style.opacity = 1;
+        title4.style.opacity = 1;
+        poeme4.style.opacity = 1;
+        autor4.style.opacity = 1;
+    },"1000");
+    setTimeout(()=>{
+        title4.style.top = 0;
+        poeme4.style.bottom = 0;
+        autor4.style.right = 0;
+    },"2000");
 }
 
 function showstep5(){
@@ -109,6 +131,43 @@ function showstep5(){
     step4.style.display = "none";
     step5.style.display = "block";
 
+    step5.style.opacity = 0;
+
+    title5.style.opacity = 0;
+    
+    poeme5.style.opacity = 0;
+    
+    autor5.style.opacity = 0;
+
+    setTimeout(()=>{
+        step5.style.opacity = 1;
+        title5.style.opacity = 1;
+        poeme5.style.opacity = 1;
+        autor5.style.opacity = 1;
+    },"1000");
+    setTimeout(()=>{
+        title5.style.top = 0;
+        poeme5.style.bottom = 0;
+        autor5.style.right = 0;
+    },"2000");
+    setTimeout(()=>{
+        title5.style.bottom = -9000;
+        poeme5.style.top = -9000;
+        autor4.style.bottom = -9000;
+    },"11000");
+    setTimeout(()=>{
+        step5.style.opacity = 1;
+
+        title5.style.opacity = 1;
+        
+        poeme5.style.opacity = 1;
+        
+        autor5.style.opacity = 1;
+    },"12000");
+    setTimeout(()=>{
+        start()
+    }, "15000")
+
 }
 
 function start(){
@@ -117,6 +176,8 @@ function start(){
     let poeme1 = document.getElementById('poeme1')
     let autor1 = document.getElementById('autor1')
     console.log(step1)
+
+
 
     step1.style.opacity = 1;
 
@@ -154,9 +215,9 @@ function exit(){
         poeme1.style.opacity = 0;
         
         autor1.style.opacity = 0;
-    },"5000");
+    },"6000");
     setTimeout(()=>{
         step1.style.opacity = 0;
-    },"7000")
+    },"8000")
 }
 

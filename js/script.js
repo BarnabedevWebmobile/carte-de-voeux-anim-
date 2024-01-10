@@ -120,6 +120,24 @@ function showstep4(){
         poeme4.style.bottom = 0;
         autor4.style.right = 0;
     },"2000");
+    setTimeout(()=>{
+        title4.style.bottom = -9000;
+        poeme4.style.top = -9000;
+        autor4.style.bottom = -9000;
+    },"11000");
+    setTimeout(()=>{
+        step4.style.opacity = 1;
+
+        title4.style.opacity = 1;
+        
+        poeme4.style.opacity = 1;
+        
+        autor4.style.opacity = 1;
+    },"12000");
+    setTimeout(()=>{
+        showstep5()
+    }, "15000")
+
 }
 
 function showstep5(){
@@ -150,23 +168,6 @@ function showstep5(){
         poeme5.style.bottom = 0;
         autor5.style.right = 0;
     },"2000");
-    setTimeout(()=>{
-        title5.style.bottom = -9000;
-        poeme5.style.top = -9000;
-        autor4.style.bottom = -9000;
-    },"11000");
-    setTimeout(()=>{
-        step5.style.opacity = 1;
-
-        title5.style.opacity = 1;
-        
-        poeme5.style.opacity = 1;
-        
-        autor5.style.opacity = 1;
-    },"12000");
-    setTimeout(()=>{
-        start()
-    }, "15000")
 
 }
 

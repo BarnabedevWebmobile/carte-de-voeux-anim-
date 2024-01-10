@@ -55,25 +55,31 @@ section::before{
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: all .800s;
+    transition: all .20s;
 }
 .step2{
     background-image: url(../images/dormeur.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+    transition: all .20s;
 }
 .step3{
     background-image: url(../images/colchique.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+    transition: all .20s;
 }
 .step4{
     background-image: url(../images/bakamitai.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+    transition: all .20s;
 }
 
 
@@ -82,6 +88,8 @@ section::before{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+    transition: all .20s;
 }
 .titre-auteur{
     font-family: 'Dancing Script', cursive;
@@ -99,6 +107,18 @@ section::before{
 #autor1{
     right: -1000px;
 }
+#autor2{
+    right: -1500px;
+}
+#autor3{
+    right: -1350px;
+}
+#autor4{
+    right: -1500px;
+}
+#autor4{
+    right: -1500px;
+}
 h2{
     font-size: 26px;
     margin-bottom: 40px;
@@ -110,23 +130,65 @@ h2{
     top: -900px;
     transition: all .200000s;
 }
+#title2{
+    position: relative;
+    top: -900px;
+    transition: all .200000s;
+}
+#title3{
+    position: relative;
+    top: -900px;
+    transition: all .200000s;
+}
+#title4{
+    position: relative;
+    top: -900px;
+    transition: all .200000s;
+}
+#title5{
+    position: relative;
+    top: -900px;
+    transition: all .200000s;
+}
 p{
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
 }
+
+#poeme1{
+    opacity: 0;
+    bottom: -5000px;
+    transition: all .50s;
+}
+#poeme2{
+    bottom: -5000px;
+    transition: all .50s;
+    opacity: 0;
+}
+#poeme3{
+    bottom: -5000px;
+    transition: all .50s;
+    opacity: 0;
+}
+#poeme4{
+    bottom: -5000px;
+    transition: all .50s;
+    opacity: 0;
+}
+#poeme5{
+    bottom: -5000px;
+    opacity: 0;
+    transition: all .50s;
+}
 .poeme{
     position: relative;
-    bottom: -9000px;
-    transition: all .20s;
     max-height: 90vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     opacity: 1;
     font-family: 'Kalam', cursive;
-    opacity: 0;
-    transition: all .5s;
 }
 .poeme p{
     padding-right: 30px;

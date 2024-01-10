@@ -10,17 +10,83 @@ function showstep2(){
     step1.style.display = "none";
     step2.style.display = "block";
 
+    step2.style.opacity = 0;
+
+    title2.style.opacity = 0;
+    
+    poeme2.style.opacity = 0;
+    
+    autor2.style.opacity = 0;
+
+    setTimeout(()=>{
+        step2.style.opacity = 1;
+        title2.style.opacity = 1;
+        poeme2.style.opacity = 1;
+        autor2.style.opacity = 1;
+    },"1000");
+    setTimeout(()=>{
+        title2.style.top = 0;
+        poeme2.style.bottom = 0;
+        autor2.style.right = 0;
+    },"2000");
+    setTimeout(()=>{
+        title2.style.bottom = -9000;
+        poeme2.style.top = -9000;
+        autor2.style.bottom = -9000;
+    },"10000");
+    setTimeout(()=>{
+        step2.style.opacity = 0;
+
+    },"13000");
+    setTimeout(()=>{
+        showstep3()
+    }, "15000")
+
 }
 
 function showstep3(){
+    let step2 = document.getElementById('step2')
     let step3 = document.getElementById('step3')
     let title3 = document.getElementById('title3')
     let poeme3 = document.getElementById('poeme3')
     let autor3 = document.getElementById('autor3')
     
-    step1.style.display = none;
-    step2.style.display = block;
+    step2.style.display = "none";
+    step3.style.display = "block";
 
+    step3.style.opacity = 0;
+
+    title3.style.opacity = 0;
+    
+    poeme3.style.opacity = 0;
+    
+    autor3.style.opacity = 0;
+
+    setTimeout(()=>{
+        step3.style.opacity = 1;
+        title3.style.opacity = 1;
+        poeme3.style.opacity = 1;
+        autor3.style.opacity = 1;
+    },"1000");
+    setTimeout(()=>{
+        title3.style.top = 0;
+        poeme3.style.bottom = 0;
+        autor3.style.right = 0;
+    },"2000");
+    setTimeout(()=>{
+        title3.style.bottom = -9000;
+        poeme3.style.top = -9000;
+        autor3.style.bottom = -9000;
+    },"11000");
+    setTimeout(()=>{
+        step3.style.opacity = 1;
+
+        title3.style.opacity = 1;
+        
+        poeme3.style.opacity = 1;
+        
+        autor3.style.opacity = 1;
+    },"12000");
 }
 
 function showstep4(){
@@ -29,8 +95,8 @@ function showstep4(){
     let poeme4 = document.getElementById('poeme4')
     let autor4 = document.getElementById('autor4')
     
-    step1.style.display = none;
-    step2.style.display = block;
+    step3.style.display = "none";
+    step4.style.display = "block";
 
 }
 
@@ -40,8 +106,8 @@ function showstep5(){
     let poeme5 = document.getElementById('poeme5')
     let autor5 = document.getElementById('autor5')
     
-    step1.style.display = none;
-    step2.style.display = block;
+    step4.style.display = "none";
+    step5.style.display = "block";
 
 }
 
@@ -69,7 +135,7 @@ function start(){
     },"2000");
     setTimeout(()=>{
         showstep2()
-    }, "11000")
+    }, "13000")
 }
 
 
@@ -81,13 +147,16 @@ function exit(){
     autor1.style.bottom = -9000;
 
     setTimeout(()=>{
-        step1.style.opacity = 1;
+        
 
         title1.style.opacity = 0;
         
         poeme1.style.opacity = 0;
         
         autor1.style.opacity = 0;
-    },"29000");
+    },"5000");
+    setTimeout(()=>{
+        step1.style.opacity = 0;
+    },"7000")
 }
 

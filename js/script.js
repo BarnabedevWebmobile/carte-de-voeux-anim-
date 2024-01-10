@@ -28,7 +28,7 @@ function showstep2(){
         title2.style.top = 0;
         poeme2.style.bottom = 0;
         autor2.style.right = 0;
-    },"8000");
+    },"7000");
     setTimeout(()=>{
         title2.style.bottom = -9000;
         poeme2.style.top = -9000;
@@ -38,14 +38,14 @@ function showstep2(){
         poeme2.style.opacity = 0;
         
         autor2.style.opacity = 0;
-    },"65000");
+    },"45000");
     setTimeout(()=>{
         step2.style.opacity = 0;
 
-    },"75000");
+    },"55000");
     setTimeout(()=>{
         showstep3()
-    }, "83000")
+    }, "57000")
 
 }
 
@@ -77,7 +77,7 @@ function showstep3(){
         title3.style.top = 0;
         poeme3.style.bottom = 0;
         autor3.style.right = 0;
-    },"8000");
+    },"7000");
     setTimeout(()=>{
         title3.style.bottom = -9000;
         poeme3.style.top = -9000;
@@ -87,15 +87,15 @@ function showstep3(){
         poeme3.style.opacity = 0;
         
         autor3.style.opacity = 0;
-    },"65000");
+    },"45000");
     setTimeout(()=>{
         step3.style.opacity = 0;
 
 
-    },"75000");
+    },"55000");
     setTimeout(()=>{
         showstep4()
-    }, "83000")
+    }, "57000")
 }
 
 function showstep4(){
@@ -125,7 +125,7 @@ function showstep4(){
         title4.style.top = 0;
         poeme4.style.bottom = 0;
         autor4.style.right = 0;
-    },"8000");
+    },"7000");
     setTimeout(()=>{
 
         title4.style.bottom = -9000;
@@ -135,15 +135,15 @@ function showstep4(){
         poeme4.style.opacity = 0;
         autor4.style.opacity = 0;
 
-    },"65000");
+    },"45000");
     setTimeout(()=>{
 
         step4.style.opacity = 0;
 
-    },"75000");
+    },"55000");
     setTimeout(()=>{
         showstep5()
-    }, "83000")
+    }, "57000")
 
 }
 
@@ -236,6 +236,6 @@ function exit(){
 
 function play() {
     const audio = document.getElementById("my-audio");
-    audio.volume = 0.3;
+    audio.volume = 0.2;
     audio.play();
   }

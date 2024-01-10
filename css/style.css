@@ -7,6 +7,7 @@ section{
     justify-content: center;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 section::before{
     content: "";
@@ -55,7 +56,7 @@ section::before{
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: all 5s;
+    transition: all 3s;
 }
 .step2{
     background-image: url(../images/dormeur.jpg);
@@ -63,7 +64,7 @@ section::before{
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: all 5s;
+    transition: all 3s;
 }
 .step3{
     background-image: url(../images/colchique.jpg);
@@ -71,7 +72,7 @@ section::before{
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: all 5s;
+    transition: all 3s;
 }
 .step4{
     background-image: url(../images/bakamitai.jpg);
@@ -79,7 +80,7 @@ section::before{
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: all 5s;
+    transition: all 3s;
 }
 
 
@@ -89,7 +90,7 @@ section::before{
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: all 5s;
+    transition: all 3s;
 }
 .titre-auteur{
     font-family: 'Dancing Script', cursive;
@@ -102,53 +103,53 @@ section::before{
     font-size: 22px;
     right: 290px;
     opacity: 0;
-    transition: all 12s;
+    transition: all 9s;
 }
 #autor1{
-    right: -1000px;
+    right: -1600px;
 }
 #autor2{
-    right: -1500px;
+    right: -1600px;
 }
 #autor3{
-    right: -1350px;
+    right: -1600px;
 }
 #autor4{
-    right: -1500px;
+    right: -1600px;
 }
 #autor4{
-    right: -1500px;
+    right: -1600px;
 }
 h2{
     font-size: 26px;
     margin-bottom: 40px;
     opacity: 0;
-    transition: all 6s;
+    transition: all 4s;
 }
 #title1{
     position: relative;
     top: -900px;
-    transition: all 6s;
+    transition: all 4s;
 }
 #title2{
     position: relative;
     top: -900px;
-    transition: all 6s;
+    transition: all 4s;
 }
 #title3{
     position: relative;
     top: -900px;
-    transition: all 6s;
+    transition: all 4s;
 }
 #title4{
     position: relative;
     top: -900px;
-    transition: all 6s;
+    transition: all 4s;
 }
 #title5{
     position: relative;
     top: -900px;
-    transition: all 6s;
+    transition: all 4s;
 }
 p{
     margin-bottom: 20px;
@@ -158,28 +159,28 @@ p{
 
 #poeme1{
     opacity: 0;
-    bottom: -5000px;
-    transition: all 9s;
+    bottom: -3000px;
+    transition: all 6s;
 }
 #poeme2{
-    bottom: -5000px;
-    transition: all 9s;
+    bottom: -3000px;
+    transition: all 6s;
     opacity: 0;
 }
 #poeme3{
-    bottom: -5000px;
-    transition: all 9s;
+    bottom: -3000px;
+    transition: all 6s;
     opacity: 0;
 }
 #poeme4{
-    bottom: -5000px;
-    transition: all 9s;
+    bottom: -3000px;
+    transition: all 6s;
     opacity: 0;
 }
 #poeme5{
-    bottom: -5000px;
+    bottom: -3000px;
     opacity: 0;
-    transition: all 9s;
+    transition: all 6s;
 }
 .poeme{
     position: relative;

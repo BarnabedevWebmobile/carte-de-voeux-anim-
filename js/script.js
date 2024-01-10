@@ -233,3 +233,9 @@ function exit(){
         step1.style.opacity = 0;
     },"9000")
 }
+
+function play() {
+    const audio = document.getElementById("my-audio");
+    audio.volume = 0.3;
+    audio.play();
+  }
